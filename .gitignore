@@ -1,0 +1,12 @@
+target
+*.assets*
+*.so
+*.onnx
+*.ort
+*.idea
+*.kiro
+*.vs_code
+*.secret
+Cargo.lock
+output
+scripts_release
