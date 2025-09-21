@@ -44,10 +44,34 @@ The licensing strategy serves multiple purposes:
 >
 > [https://github.com/cyborg-ai-git/app_cyborgai_peer/releases/]( https://github.com/cyborg-ai-git/app_cyborgai_peer/releases/)
 
-> **Try CyborgAI_peer:**
-> 
-> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1eHIwNPikysW4j0eMJ8mhDdng4mkBVd08?usp=sharing)
+> **Try CyborgAI_peer AI provider: CyborgAI**
+>
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
 
+> **Try CyborgAI_peer AI provider: Ollama**
+> 
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
+
+> **Try CyborgAI_peer AI provider: vLLM**
+>
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
+
+> **Try CyborgAI_peer AI provider: OpenAI**
+>
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
+
+> **Try CyborgAI_peer AI provider: Antrophic**
+>
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
+
+> **Try CyborgAI_peer AI provider: DeepSeek**
+>
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
+
+
+> **Try CyborgAI_peer AI provider: HuggingFace**
+>
+> [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
 
 ---
 
@@ -55,6 +79,8 @@ The licensing strategy serves multiple purposes:
 > **[Levels doc](https://github.com/cyborg-ai-git/doc_whitepaper.git)**
 > 
 > [evo_framework](https://github.com/cyborg-ai-git/evo_framework.git) -> min level: **1 (Red pill)**
+>  
+> [evo_core_log](https://github.com/cyborg-ai-git/evo_core_log.git) -> min level: **1 (Red pill)**
 > 
 > [evo_core_app_peer](https://github.com/cyborg-ai-git/evo_core_app_peer.git) -> min level: **7 (Trinity)**
 
@@ -83,6 +109,7 @@ EVO cyborgai_peer is a modern terminal-based built with Rust and the EVO Framewo
 *Click the image above to watch the demo video on YouTube*
 
 ---
+
 
 ## Usage
 ```bash
