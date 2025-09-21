@@ -27,6 +27,13 @@ version = "*"
 git = "https://github.com/cyborg-ai-git/evo_framework.git"
 #tag = "v*"
 #-----------------------------------------------------------------------------------------------------------------------
+[dependencies.evo_core_log]
+# <https://crates.io/>
+version = "*"
+# <https://github.com/>
+git = "https://github.com/cyborg-ai-git/evo_core_log.git"
+#tag = "v*"
+#-----------------------------------------------------------------------------------------------------------------------
 [dependencies.evo_core_app_peer]
 # <https://crates.io/>
 #version = "*"
