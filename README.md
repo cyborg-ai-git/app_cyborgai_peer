@@ -66,37 +66,58 @@ The licensing strategy serves multiple purposes:
 
 EVO cyborgai_peer is a modern terminal-based built with Rust and the EVO Framework AI. It provides:
 
-- **Interactive AI Chat Interface** with persistent conversation history
-- **Multi-Panel Layout** featuring Chat, File Explorer, Git operations, Settings, and Help panels
-- **Full Mouse Support** with click navigation, scrolling, and modern UI interactions📖 
-- **Cross-Platform Compatibility** for macOS, Linux, and Windows
-- **Session Management** with automatic saving and restoration
-- **Built-in Help System** with comprehensive keyboard shortcuts
-- **Git and Github Integration** for repository management
-- **File Explorer** for project navigation
+- **Create decentralized peer for expose api/ai** -> **[EVO Framework Documentation](https://github.com/cyborg-ai-git/doc_evo_framework_ai)**
+- **Use Evo framework AI** -> **[EVO Framework Documentation](https://github.com/cyborg-ai-git/doc_evo_framework_ai)**
+- **Use Vip6** -> **[EVO Framework Documentation](https://github.com/cyborg-ai-git/doc_evo_framework_ai)**
+- **Use full Post Quantum cryptography for your privacy** -> **[EVO Framework Documentation](https://github.com/cyborg-ai-git/doc_evo_framework_ai)**
+---
+
+## 🎥 CyborgAI_peer Video 
+[![cyborgai_peer Demo](https://img.youtube.com/vi/s1UVb4v16U0/maxresdefault.jpg)](https://youtu.be/s1UVb4v16U0)
+*Click the image above to watch the demo video on YouTube*
 
 ---
 
-## 🎥 Demo Video
+## 🎥 Evo Framework AI Video
 [![cyborgai_peer Demo](https://img.youtube.com/vi/s1UVb4v16U0/maxresdefault.jpg)](https://youtu.be/s1UVb4v16U0)
-
-
 *Click the image above to watch the demo video on YouTube*
 
 ---
 
 ## Usage
-1. **Navigation**:
-    - Use mouse clicks to switch between panels
-    - Use keyboard shortcuts (press `?` for help)
-    - Type messages in chat and press Enter to send
-2. **Panels**:
-    - **Chat**: AI conversation interface
-    - **File**: File explorer for project navigation
-    - **Git**: Git repository operations
-    - **Settings**: Application configuration
-    - **Help**: Keyboard shortcuts and usage guide
+```bash
+cyborgai_peer --help
+```
+```
+Usage: cyborgai_peer [OPTIONS]
 
+Options:
+-e, --env <PATH_EVO_PEER_INPUT> <PATH_EVO_ENV_OUTPUT>
+Specify the path to the peer configuration file.
+This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
+Example: /{FULL_PATH}/to/.evo_env
+
+      --export <PATH_EVO_ENV_OUTPUT>
+          Specify the path to the peer configuration file.
+          This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
+          Example: /{FULL_PATH}/to/.evo_env
+
+-u, --use_env <PATH_EVO_ENV_OUTPUT>
+Specify the path to the peer configuration file.
+This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
+Example: /{FULL_PATH}/to/.evo_env
+
+-p, --peer [<PATH_EVO_PEER_OUTPUT>]
+Specify the path to the peer configuration file.
+This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
+Example: /{FULL_PATH}/to/.evo
+
+-h, --help
+Print help (see a summary with '-h')
+
+-V, --version
+Print version
+```
 ---
 
 ## Installation
@@ -148,41 +169,7 @@ chmod +x ./scripts/install.sh
 
 ---
 
-```bash
-cyborgai_peer --help
-```
-```
-Usage: cyborgai_peer [OPTIONS]
 
-Options:
--e, --env <PATH_EVO_PEER_INPUT> <PATH_EVO_ENV_OUTPUT>
-Specify the path to the peer configuration file.
-This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
-Example: /{FULL_PATH}/to/.evo_env
-
-      --export <PATH_EVO_ENV_OUTPUT>
-          Specify the path to the peer configuration file.
-          This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
-          Example: /{FULL_PATH}/to/.evo_env
-
--u, --use_env <PATH_EVO_ENV_OUTPUT>
-Specify the path to the peer configuration file.
-This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
-Example: /{FULL_PATH}/to/.evo_env
-
--p, --peer [<PATH_EVO_PEER_OUTPUT>]
-Specify the path to the peer configuration file.
-This file should contain peer information, visit: https://cyborgai.fly.dev/cyborgai_peer.
-Example: /{FULL_PATH}/to/.evo
-
--h, --help
-Print help (see a summary with '-h')
-
--V, --version
-Print version
-```
-
----
 
 ## How to Run
 
