@@ -171,13 +171,10 @@ chmod +x ./scripts/install.sh
 
 ---
 
-
 | Tool                | Description                                               | Documentation                                        |
 |---------------------|-----------------------------------------------------------|------------------------------------------------------|
 | **GitHub CLI (gh)** | Required for repository and issue management scripts      | 📖 **[Install GitHub CLI Guide](https://github.com/cyborg-ai-git/doc_evo_framework_ai)**    |
 | **Git Flow**        | Used for organized development workflow                   | 📖 **[Install Git Flow Guide](https://github.com/cyborg-ai-git/doc_evo_framework_ai)** |
-| **PlantUML**        | Required for diagram generation in `run_documentation.sh` | 📖 **[Install PlantUML Guide]https://github.com/cyborg-ai-git/doc_evo_framework_ai)** |
-| **Pandoc**          | Required for document export to PDF, DOC, ODT formats     | 📖 **[Install Pandoc Guide](https://github.com/cyborg-ai-git/doc_evo_framework_ai)**     |
 
 **Note**: We are actively working on eliminating these external dependencies in the upcoming **CyborgAI Dev** application.
 
@@ -187,16 +184,12 @@ chmod +x ./scripts/install.sh
 
 | Tool | Description | Documentation |
 |------|-------------|---------------|
-| **GitHub CLI (gh)** | Required for repository and issue management scripts | 📖 **[Install GitHub CLI Guide](https://github.com/cyborg-ai-git/doc_evo_framework_ai)** |
-| **Git Flow** | Used for organized development workflow with feature/release branches | 📖 **[Install Git Flow Guide](https://github.com/cyborg-ai-git/doc_evo_framework_ai)** |
 | **PlantUML** | Required for diagram generation in `run_documentation.sh` | 📖 **[Install PlantUML Guide](https://github.com/cyborg-ai-git/doc_evo_framework_ai)** |
 | **Pandoc** | Required for document export to PDF, DOC, ODT formats | 📖 **[Install Pandoc Guide](https://github.com/cyborg-ai-git/doc_evo_framework_ai)** |
 
 **Note**: We are actively working on eliminating these external dependencies in the upcoming **CyborgAI Dev** application.
 
 ---
-
-
 
 ## How to Run
 
@@ -226,7 +219,7 @@ chmod +x scripts/run.sh
 
 ```
 app_cyborgai_peer/
-├── app_cyborgai_peer/             # Main CLI application
+├── app_cyborgai_peer/            # Main CLI application
 │   ├── src/
 │   │   └── main.rs               # Application entry point
 │   ├── benches/                  # Performance benchmarks

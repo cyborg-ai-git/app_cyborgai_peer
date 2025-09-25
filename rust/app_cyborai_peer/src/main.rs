@@ -31,9 +31,7 @@ pub const EVO_VERSION: u64 = 2025211344;
 async fn main() -> Result<(), Box<dyn IError>> {
 
     //Init log level
-    do_init_logger(Some(LevelFilter::Info));
-
-    info!("EVO_VERSION: {}", EVO_VERSION);
+    do_init_logger(Some(LevelFilter::Error));
 
     // evo_core_app_peer::CAppMain
     let mut c_app_main = CAppMain::default();
