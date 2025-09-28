@@ -25,13 +25,13 @@ use evo_core_log::do_init_logger;
 use evo_framework::{IControl, IError};
 //==================================================================================================
 /// Version of the app
-pub const EVO_VERSION: u64 = 2025211344;
+pub const EVO_VERSION: u64 = 2025281008;
 //--------------------------------------------------------------------------------------------------
 #[tokio::main(flavor = "multi_thread")]
 async fn main() -> Result<(), Box<dyn IError>> {
 
     //Init log level
-    do_init_logger(Some(LevelFilter::Error));
+    do_init_logger(Some(LevelFilter::Info));
 
     // evo_core_app_peer::CAppMain
     let mut c_app_main = CAppMain::default();
