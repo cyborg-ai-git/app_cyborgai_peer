@@ -20,12 +20,12 @@
 //! [cyborgai_dev]:  https://github.com/cyborg-ai-git/app_cyborgai_dev
 //==================================================================================================
 use log::{error, info, LevelFilter};
-use evo_core_app_peer::CAppMain;
-use evo_core_log::do_init_logger;
 use evo_framework::{IControl, IError};
+use evo_core_log::do_init_logger;
+use evo_core_app_peer::CAppMain;
 //==================================================================================================
 /// Version of the app
-pub const EVO_VERSION: u64 = 2025281008;
+pub const EVO_VERSION: u64 = 2025301449;
 //--------------------------------------------------------------------------------------------------
 #[tokio::main(flavor = "multi_thread")]
 async fn main() -> Result<(), Box<dyn IError>> {

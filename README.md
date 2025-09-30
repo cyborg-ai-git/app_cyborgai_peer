@@ -60,7 +60,7 @@ The licensing strategy serves multiple purposes:
 >
 > [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
 
-> **Try CyborgAI_peer AI provider: Antrophic**
+> **Try CyborgAI_peer AI provider: Anthropic**
 >
 > [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1asRD5BcKHhPPs5xJ9Me_helQL5JPBb0m?usp=sharing)
 
