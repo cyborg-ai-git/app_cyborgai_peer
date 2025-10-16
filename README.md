@@ -226,71 +226,59 @@ app_cyborgai_peer/
 │   │   └── bench_app_cyborgai_peer.rs
 │   ├── tests/                    # Integration tests
 │   │   └── test_app_cyborgai_peer.rs
-│   └── Cargo.toml               # Package configuration
-├── scripts/                     # Development and automation scripts
-│   ├── install.sh               # Install rust + audit 
-│   ├── 0_issue_create.sh        # Create GitHub issues with branches
-│   ├── 1_issue_start.sh         # Start working on issues
-│   ├── 2_issue_commit.sh        # Commit changes
-│   ├── 3_issue_finish.sh        # Finish issues with PRs
-│   ├── issue_list.sh            # List GitHub issues
-│   ├── run.sh                   # Run application in release mode
-│   ├── run_dev.sh               # Run application in development mode
-│   ├── run_benches.sh           # Run performance benchmarks
-│   ├── run_cargo_clean.sh       # Clean build artifacts
-│   ├── run_cargo_update.sh      # Update dependencies
+│   └── Cargo.toml                # Package configuration
+├── contributing/                 # Issue management and workflow scripts
+│   ├── 0_issue_create.sh         # Create GitHub issues with branches
+│   ├── 1_issue_start.sh          # Start working on issues
+│   ├── 2_issue_commit.sh         # Commit all files changed
+│   └── 3_issue_finish.sh         # Finish issues with PRs
+├── scripts/                      # Development and automation scripts
+│   ├── run.sh                    # Run application in release mode
+│   ├── run_dev.sh                # Run application in development mode
+│   ├── run_benches.sh            # Run performance benchmarks
+│   ├── run_cargo_clean.sh        # Clean build artifacts
+│   ├── run_cargo_update.sh       # Update dependencies
 │   ├── run_create_github_repository.sh  # Create GitHub repo with Git Flow
-│   ├── run_documentation.sh     # Generate documentation
-│   ├── run_format_code.sh       # Format and lint code
-│   ├── run_git_push.sh          # Git Flow operations and releases
-│   ├── run_publish.sh           # Publish to crates.io
-│   └── run_tests.sh             # Run test suite
-├── documentation/               # Generated documentation
-│   ├── data/                    # Documentation assets
-│   │   └── logo_evo.svg         # Project logo
-│   └── doc/                     # Generated Rust docs
-├── Cargo.toml                   # Workspace configuration
-├── LICENSE.txt                  # License file
-├── .gitignore                   # Git ignore rules
-└── README.md                    # This file
+│   ├── run_documentation.sh      # Generate documentation
+│   ├── run_format_code.sh        # Format and lint code
+│   ├── run_git_push.sh           # Git Flow operations and releases
+│   ├── run_publish.sh            # Publish to crates.io
+│   └── run_tests.sh              # Run test suite
+├── documentation/                # Generated documentation
+│   ├── data/                     # Documentation assets
+│   │   └── logo_evo.svg          # Project logo
+│   └── doc/                      # Generated Rust docs
+├── Cargo.toml                    # Workspace configuration
+├── LICENSE.txt                   # License file
+├── .gitignore                    # Git ignore rules
+└── README.md                     # Readme file
 ```
 
 ---
 
-## Scripts Folder Explanation
+## Scripts and Contributing Folders Explanation
 
-The `scripts/` folder contains automation scripts for development workflow:
+### Contributing Folder
+The `contributing/` folder contains issue management and workflow scripts:
 
-### Build & Development Scripts
-- **`install.sh`**: Runs the application in release mode for optimal performance
-- **`run.sh`**: Runs the application in release mode for optimal performance
-- **`run_dev.sh`**: Runs the application in development mode using for faster compilation
-- **`run_cargo_clean.sh`**: Cleans all build artifacts and target directories
-- **`run_cargo_update.sh`**: Updates all Cargo dependencies to their latest compatible versions
-- **`run_format_code.sh`**: Formats code  and runs linting
-- **`run_benches.sh`**: Runs performance benchmarks 
-- **`run_tests.sh`**: Executes the full test suite with info-level debugging
-
-
-### Issue Management (GitHub Integration)
-- **`0_issue_create.sh`**: 
+#### Issue Management (GitHub Integration)
+- **`0_issue_create.sh`**:
   - Creates GitHub issues and corresponding Git Flow feature branches
-  - Usage: `./scripts/0_issue_create.sh "issue title" "description"`
+  - Usage: `./0_issue_create.sh "issue title" "description"`
   - Automatically generates sanitized branch names like `feature/issue_123_fix_bug`
 
-- **`1_issue_start.sh`**: 
+- **`1_issue_start.sh`**:
   - Starts work on existing GitHub issues by creating feature branches
-  - Usage: `./scripts/1_issue_start.sh issue_number`
+  - Usage: `./1_issue_start.sh issue_number`
   - Checks out existing remote branches if they exist
-  
+
 - **`2_issue_commit.sh`**:
-    - Commit all changes (git add .)
-    - Usage: `./scripts/2_issue_commit.sh "Commit description"`
-    - Checks out existing remote branches if they exist
-  
-- **`3_issue_finish.sh`**: 
+  - Commits all changed files with proper Git Flow workflow
+  - Usage: `./2_issue_commit.sh "commit message"`
+  - Handles rebasing and pushing to current branch
+
+- **`3_issue_finish.sh`**:
   - Completes issue workflow by creating pull requests and closing issues
-  - Usage: `./scripts/3_issue_fimish.sh issue_number`
   - Merges feature branches back to develop using Git Flow
   - Automatically closes GitHub issues when PRs are created
 
@@ -303,7 +291,6 @@ The `scripts/` folder contains automation scripts for development workflow:
   - Copies generated docs to `documentation/doc/` for version control
 
 ---
-
 
 ## Development Workflow
 
@@ -340,31 +327,29 @@ Use our automated scripts for streamlined contributions:
 
 ```bash
 
+# Install all required tools first
+./scripts/run_install.sh
+
 # Create a new issue and feature branch
-# type: [bug|feature|doc|performance]
-./scripts/0_issue_create.sh type "Title" "Detailed description"
+# type: [doc|feature]
+./contributing/0_issue_create.sh type "Title" "Detailed description"
 
 #examples:
-# Create a bug issue
-#./scripts/0_issue_create.sh bug "Fix ai agent tab" "Users can not ..."
-
-# Create a feature request  
-#./scripts/0_issue_create.sh feature "Add dark mode" "Implement dark theme support for better user experience ..."
 
 # Create a documentation issue
-#./scripts/0_issue_create.sh doc "Update API docs" "The agent tab section needs doc ..."
+#./contributing/0_issue_create.sh doc "Update API docs" "The agent tab section needs doc ..."
 
-# Create a performance issue
-#./scripts/0_issue_create.sh performance "Slow ..." "Application takes...."
+# Create a feature request  
+#./contributing/0_issue_create.sh feature "Add dark mode" "Implement dark theme support for better user experience ..."
 
 # Start working on an existing issue
-./scripts/1_issue_start.sh 123
+./contributing/1_issue_start.sh 123
 
-# Commit and pull your changes 
-./scripts/2_issue_commit.sh "fixed: ..."
+# Commit your changes
+./contributing/2_issue_commit.sh "Add new feature implementation"
 
 # Finish your work and create a pull request
-./scripts/3_issue_finish.sh 123
+./contributing/3_issue_finish.sh 123
 ```
 ---
 
